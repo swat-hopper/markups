@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --main-color: #3c2946 ;
+  --second-color: #ffd571 ;
+  --main-dark: #000000 ;
+  --main-clear: #f5f5f5 ;
+}
+
+.filter--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  background-color: #0a002f;
+  color: var(--main-clear);
+}
+
+.filter--title {
+  width: 300px;
+  margin: 0 0 0 60px;
+  justify-self: left;
+  color: var(--main-clear);
+}
+
+.dfilter--container {
+  display: flex;
+  max-width: 100%;
+  height: 70px;
+  align-items: stretch;
+  justify-content: space-evenly;
+  font-size: 18px; /*Pendiente:  definir tamaño en rems*/
+  background-color: #0a002f;
+  color: var(--main-clear);
+}
+
+.dfilter--level {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.dfilter--level__label {
+  margin:0 0 15px 0;  
+}
+
+.dfilter--level .dfilter--level__item {
+  display: flex;
+  margin: 0 15px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dfilter--level__input-fake {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: .8s;
+  outline: #0a002f;
+}
+
+/* Botones sin seleccionar*/
+
+.easy {
+  border: 3px solid  #17B978;
+  border-radius: 50%;
+}
+
+.medium {
+  border: 3px solid  #FFC93C;
+  border-radius: 50%;
+}
+
+.hard {
+  border: 3px solid  #B80D57;
+  border-radius: 50%;
+}
+
+/*Botones seleccionados: Cambio del relleno*/
+
+.easy .dfilter--level__input:checked ~ .dfilter--level__input-fake {
+  display: block;
+  border-radius: 50%;
+  border: 4px solid  #0a002f;
+  background-color: #17B978;
+}
+.medium .dfilter--level__input:checked ~ .dfilter--level__input-fake {
+  display: block;
+  border-radius: 50%;
+  border: 4px solid  #0a002f;
+  background-color: #FFC93C;
+}
+.hard .dfilter--level__input:checked ~ .dfilter--level__input-fake {
+  display: block;
+  border-radius: 50%;
+  border: 4px solid  #0a002f;
+  background-color: #B80D57;
+}
+
+.dfilter--level__input {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 55px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/*Pediente: Tabindex NO funciona en los filtros*/
+
+.dfilter--level__input-fake:focus {
+  outline: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
