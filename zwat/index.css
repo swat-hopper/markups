@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*____INICIO HEADER*/
+
+.header {
+	width: 100%;
+	height: 100px;
+	padding:  0 50px;
+	background: #fbbf45;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .3);
+}
+
+.header__container {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__container--logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__container--menu-list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.header__container--menu-list li {
+	padding-left: 50px;
+	font-family: 'roboto', sans-serif;
+	font-size: 1.5em;
+}
+
+.header__container--menu-list li a {
+	text-decoration: none;
+	color: #0a002f;
+}
+
+.header__container--menu-list li button {
+	width: 244px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	color: #f5f5f5;
+	background: #710162;
+	font-size: .7em;
+	font-weight: bold;
+}
+
+/*____FIN HEADER*/
+
+
+/*---------- INICIO BOARD */
+
+/*--------- INICIA MENU BOARD*/
+.board {
+	width: 100%;
+}
+
+.board__menu--container {
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	margin: 50px auto;
+	font-family: 'roboto', sans-serif;
+}
+
+.board__menu--items {
+	display: flex;
+	list-style: none;
+}
+
+.board__menu--items li{
+	background: #f5f5f5;
+	width: 195px;
+	height: 55px;
+	margin-left: 4px;
+	display: flex;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, .5);
+	transition: .3s;
+}	
+
+.board__menu--items li a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	font-size: 20px;
+	width: 100%;
+	height: 100%;
+	color: #6e6e6f;
+}
+
+.board__menu--items li:hover {
+	background: #0a002f;	
+}
+
+.board__menu--items li a:hover {
+	color: #f5f5f5;
+}
+/*--------- FIN MENU BOARD*/
+
+/*--------- INICIA DETAILS CHALLENGE BOARD*/
+
+.challenge-details {
+	width: 100%;
+	height: auto;
+	padding: 85px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.challenge-details__title {
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: 'inter', sans-serif;
+	font-size: 2em;
+}
+
+.challenge-details__details {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1038px;
+}
+
+.challenge-details__details--challenge, .challenge-details__details--recomendation {
+	width: 40%;	
+	max-width: 427px;
+}
+
+.challenge-details__details--challenge h2, .challenge-details__details--recomendation h2 {
+	margin-bottom: 50px;
+	font-family: 'inter', sans-serif;
+}
+
+.challenge-details__details--challenge p, .challenge-details__details--recomendation ul {
+	font-family: 'roboto', sans-serif;
+}
+
+/*--------- FIN DETAILS CHALLENGE BOARD*/
+
+/*--------- INICIO SEND CHALLENGE BOARD*/
+
+.link-container{
+	width: 100%;	
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.link-container__title {
+	font-family: 'inter', sans-serif;
+	max-width: 655px;
+	font-size: 1.5em;
+	margin: 7px;
+}
+
+.link-container__input {
+	width: 100%;
+	max-width: 655px;
+	height: 34px;
+	padding: 0 10px;
+	border: none;
+	border-radius: 5px;
+	background: #f5f5f5;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	outline: none;
+}
+
+.link-container__input--button {
+	width: 220px;
+	height: 48px;
+	border: none;
+	margin: 10px;
+	background: #710162;
+	color: #f5f5f5;
+	border-radius: 7px;
+	font-family: 'roboto', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	outline: none;
+	transition: .5s;
+}
+
+.link-container__input--button:active {
+	transform: scale(.95);
+}
+
+.trash-button {
+	width: 50px;
+	height: 50px;
+	margin: 50px;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.trash-button:active {
+	transform: scale(.95);
+} 
+
+/*--------- FIN SEND CHALLENGE BOARD*/
+
+/*--------- INICIO PREVIEW CHALLENGE BOARD*/
+
+.preview {
+	width: 100%;
+	max-width: 1038px;
+	height: 381px;
+	border: 2px solid gray;
+	margin: 20px 0;
+}
+
+.preview-item {
+	width: 100%;
+	max-width: 427px;
+	height: 380px;
+	background: #f5f5f5;
+	border-radius: 7px;
+	margin: 10px;
+	padding-top: 1px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.preview__img {
+	height: 226px;
+	margin: 10px;
+	border-radius: 7px;
+	border: 1px solid gray;
+}
+
+.preview__details {
+	color: #313131;
+}
+
+.preview__details--title {
+	font-family: 'inter', sans-serif;
+	margin-left: 10px;
+}
+
+.preview__details--level {
+	margin-left: 10px;
+	font-family: 'roboto', sans-serif;
+	color: #5a5a5a;
+}
+
+.preview__details--language {
+	font-family: 'inter', sans-serif;
+	margin-left: 10px;
+}
+
+.preview_footer {
+	background: #eaeaea;
+	border-radius: 0 0 7px 7px;
+	padding: 10px;
+	font-family: 'robot', sans-serif;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.preview_footer__details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.preview_footer__details--profile {
+	display: flex;
+	align-items: center;	
+}
+
+.preview_footer__details--profile img {
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+}
+
+.preview_footer__details--profile p {
+	color: #313131;
+	margin-left: 10px;
+}
+
+.preview_footer__details--button button {
+	width: 150px;
+	height: 40px;
+	border-radius: 7px;
+	border: none;
+	background: #710262;
+	color: #f5f5f5;
+	font-weight: bold;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
+}
+
+/*STUDENT */
+
+.previewS__img {
+	height: 300px;
+	margin: 10px;
+	border-radius: 7px;
+	border: 1px solid gray;
+}
+
+.preview-item-student {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 427px;
+	height: 380px;
+	background: #f5f5f5;
+	border-radius: 7px;
+	margin: 10px;
+	padding-top: 1px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
+}
+
+.previewS_footer {
+	background: #eaeaea;
+	border-radius: 0 0 7px 7px;
+	padding: 10px;
+	font-family: 'robot', sans-serif;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.previewS_footer__details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.previewS_footer__details--profile {
+	display: flex;
+	align-items: center;	
+}
+
+.previewS_footer__details--profile img {
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+}
+
+.previewS_footer__details--profile p {
+	color: #313131;
+	margin-left: 10px;
+}
+
+.previewS_footer__details--button button {
+	width: 150px;
+	height: 40px;
+	border-radius: 7px;
+	border: none;
+	background: #710262;
+	color: #f5f5f5;
+	font-weight: bold;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
+}
+
+/*--------- FIN PREVIEW CHALLENGE BOARD */
+
+
+/* --------- INICIO TEAM HOME */
+
+.team {
+	width: 100%;
+	height: auto;
+	padding: 90px 1px;
+}
+
+.team__title {
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: 'inter',sans-serif;
+	font-size: 1.5rem;
+}
+
+.team__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.team__list--item {
+	width: 100px;
+	margin-left: 32px;
+	opacity: .5;
+	transition: .5s;
+}
+
+.team__list--item:hover {
+	opacity: 1;
+	transform: scale(2);
+}
+
+.team__list--item img {
+	border-radius: 50%;
+}
+
+.team__list--item p {
+	font-family: 'roboto', sans-serif;
+}
+
+/* --------- FIN TEAM HOME */
+
+
+/* --------- INICIO EDITAR PERFIL */
+
+.formEdit{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.formEdit__menu--container {
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	margin: 50px auto;
+	font-family: 'roboto', sans-serif;
+}
+
+.formEdit__menu--items {
+	display: flex;
+	list-style: none;
+}
+
+.formEdit__menu--items li{
+	background: #f5f5f5;
+	width: 195px;
+	height: 55px;
+	margin-left: 4px;
+	display: flex;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, .5);
+	transition: .3s;
+}	
+
+.formEdit__menu--items li a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	font-size: 20px;
+	width: 100%;
+	height: 100%;
+	color: #6e6e6f;
+}
+
+.formEdit__menu--items li:hover {
+	background: #0a002f;	
+}
+
+.formEdit__menu--items li a:hover {
+	color: #f5f5f5;
+}
+
+
+.formEdit-form{
+	width: 100%;	
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formEdit-form__title {
+	font-family: 'inter', sans-serif;
+	max-width: 655px;
+	font-size: 1.5em;
+	margin: 7px;
+}
+
+.formEdit-form__input {
+	width: 100%;
+	max-width: 655px;
+	height: 34px;
+	padding: 0 10px;
+	border: none;
+	border-radius: 5px;
+	background: #f5f5f5;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	outline: none;
+}
+
+.formEdit-form__input--button {
+	width: 220px;
+	height: 48px;
+	border: none;
+	margin: 10px;
+	background: #710162;
+	color: #f5f5f5;
+	border-radius: 7px;
+	font-family: 'roboto', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	outline: none;
+	transition: .5s;
+}
+
+.formEdit-form__input--button:active {
+	transform: scale(.95);
+}
+
+.formEdit__photo{
+	width: 100px;
+	margin: 20px auto;
+}
+
+
+.formEdit__photo img { 
+	border-radius: 50%;
+}
+
+.formEdit__photo p {
+	font-family: 'roboto', sans-serif;
+}
+
+
+/* --------- FIN EDITAR PERFIL */
