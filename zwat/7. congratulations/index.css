@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.congratulation {
+  display: flex;
+  margin-top: 90px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.congratulation__title {
+  font-family: 'inter', sans-serif;
+  font-size: 6em;
+  text-align: center;
+  color: #0a002f;
+}
+
+.congratulations__message {
+  font-family: 'roboto', sans-serif;
+  width: 546px;
+  font-size: 2em;
+  text-align: center;
+  color: #313131;
+  margin: 50px;
+}
+
+.congratulation img {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+}
